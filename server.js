@@ -962,9 +962,11 @@ app.use((err, req, res, next) => {
 });
 
 // ── START ─────────────────────────────────────────────────────────
+// ── START ─────────────────────────────────────────────────────────
 setupDatabase().then(() => {
-  app.listen(PORT, () => {
+  app.listen(PORT, '0.0.0.0', () => {
     console.log(`🚀 NjoroNest running at http://localhost:${PORT}`);
     console.log(`   Test it: http://localhost:${PORT}/api/health\n`);
   });
 });
+ 
