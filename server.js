@@ -3,9 +3,7 @@
 // With JWT Authentication & Role-Based Access Control
 // ================================================================
 
-require('dotenv').config();
-const express    = require('express');
-const mysql      = require('mysql2/promise');// ================================================================
+// ================================================================
 // NjoroNest — Express Backend Server
 // With JWT Authentication & Role-Based Access Control
 // ================================================================
