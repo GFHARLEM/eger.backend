@@ -962,7 +962,9 @@ app.use((err, req, res, next) => {
   console.error('Server error:', err.message);
   res.status(500).json({ success: false, message: err.message });
 });
-
+app.get("/", (req, res) => {
+  res.send("Backend is running");
+});
 // ── START ─────────────────────────────────────────────────────────
 setupDatabase().then(() => {
   app.listen(PORT, '0.0.0.0', () => {
